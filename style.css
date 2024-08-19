@@ -50,3 +50,22 @@
     align-items: center;
     font-size: 14px;
 }
+
+.library {
+    min-height: 75vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
