@@ -87,3 +87,26 @@
 .header>* {
     padding: 20px;
 }
+
+.header .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: var(--panel-bg-color);
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Login {
+    background-color: #ffffff;
+    color: black;
+    font-style: bold;
+    border-radius: 20px;
+    width: 100px;
+    
+}
