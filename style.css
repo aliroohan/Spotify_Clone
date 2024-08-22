@@ -13,6 +13,7 @@
 .left {
     width: 23vw;
     padding: 10px;
+    min-width: 200px;
     /* height: 500px; */
 }
 
@@ -22,8 +23,6 @@
     background-image: linear-gradient(rgb(47, 47, 47), var(--panel-bg-color) 30%);
     /* height: 500px; */
 }
-
-.home {}
 
 .logo {
     margin: 15px 0;
@@ -79,13 +78,27 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--panel-bg-color);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    max-height: 80px;
 }
-
+.nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header .nav .left-arrow,.right-arrow {
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header>* {
-    padding: 20px;
+    padding: 10px;
 }
 
 .header .buttons {
@@ -95,18 +108,93 @@
 
 .buttons button {
     background-color: var(--panel-bg-color);
-    color: white;
     border: none;
+    font-size: 16px;
     padding: 10px 20px; 
     font-weight: 700;
     cursor: pointer;
 }
 
+#Signup {
+    color: #888888;
+    font-size: 17px;
+}
+
+#Signup:hover {
+    color: #ffffff;
+}
 #Login {
     background-color: #ffffff;
     color: black;
-    font-style: bold;
     border-radius: 20px;
     width: 100px;
-    
+
 }
+
+#Login:hover {
+    background-color: #b4b4b4;
+    color: black;
+    font-weight: bold;
+    padding: 10px 24px;
+
+}
+
+.spotifyPlaylist {
+    padding: 16px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: scroll;
+    max-height: 75vh;
+}
+.card {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #282828;
+    cursor: pointer;
+
+}
+.card:hover .play-btn {
+    opacity: 1;
+    top: 160px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #969595;
+}
+
+.play-btn {
+    background-color: #3be477;
+    border-radius: 50%;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    right: 16px;
+    top: 170px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
