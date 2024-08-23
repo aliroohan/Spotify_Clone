@@ -195,6 +195,6 @@
     right: 16px;
     top: 170px;
     opacity: 0;
-    transition: all 0.3s ease-out;
+    transition: all 33ms ease-out;
 }
 
